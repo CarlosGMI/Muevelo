@@ -1,5 +1,5 @@
 {
-  "name": "muevelo",
+  "name": "muevelo2",
   "private": true,
   "version": "0.0.0",
   "description": "a Sails application",
@@ -20,8 +20,9 @@
     "grunt-sync": "0.5.2",
     "include-all": "^1.0.0",
     "rc": "1.0.1",
-    "sails": "~0.12.6",
-    "sails-disk": "~0.10.9"
+    "sails": "~0.12.5",
+    "sails-disk": "~0.10.9",
+    "sails-mysql": "^0.11.5"
   },
   "scripts": {
     "debug": "node debug app.js",
@@ -30,7 +31,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/anonymous node/sails user/muevelo.git"
+    "url": "git://github.com/anonymous node/sails user/muevelo2.git"
   },
   "author": "anonymous node/sails user",
   "license": ""
