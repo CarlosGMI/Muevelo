@@ -56,17 +56,18 @@
 			<section id="content"><div class="ic">More Website Templates at TemplateMonster.com!</div>
 				<div id="slogan"><img src="images/slogan.gif"></div>
 				<div class="inside">
-					<h2><span>Our</span> contacts</h2>
+					<h2><span>Contáctanos</span></h2>
 					<div class="wrapper">
 						<address>
 						<b>Zip Code:</b>50122<br>
-						<b>Country:</b>USA<br>
+						<b>País:</b>Venezuela<br>
 						<b>Telephone:</b>+354 5635600<br>
 						<b>Fax:</b>+354 5635610
 						</address>
 						<p class="extra-wrap"><b>Miscellaneous info:</b><br>
 							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
 					</div>
+					<h2 align="center"><span>Realiza tu solicitud</span></h2>
 				</div>
 				<div class="box">
 					<div class="border-right">
@@ -75,28 +76,49 @@
 								<div class="left-top-corner">
 									<div class="right-top-corner">
 										<div class="inner">
-											<h2><span>Contact</span> Form</h2>
-											<form id="contacts-form" action="">
+											<h2><span>Formulario</span> de solicitud de mudanza</h2>
+											<form id="formularioMudanza" action="/usuario/create" method="POST">
 												<fieldset>
 												<div class="field">
-													<label>Your Name:</label>
-													<input type="text" value=""/>
+													<label>Username:</label>
+													<input type="text" value="" name="Username"/>
 												</div>
 												<div class="field">
-													<label>Your E-mail:</label>
-													<input type="email" value=""/>
+													<label>Contraseña:</label>
+													<input type="password" value="" name="Contrasena"/>
 												</div>
 												<div class="field">
-													<label>Your Website:</label>
-													<input type="text" value=""/>
+													<label>Nombre:</label>
+													<input type="text" value="" name="Nombre"/>
 												</div>
 												<div class="field">
+													<label>Apellido:</label>
+													<input type="text" value="" name="Apellido"/>
+												</div>
+												<div class="field">
+													<label>Cédula:</label>
+													<input type="number" value="" name="Cedula"/> <!--OJITO CON LA SINTAXIS POR AQUÍ (Sintaxis del type="number")-->
+												</div>
+												<div class="field">
+													<label>Teléfono:</label>
+													<input type="number" value="" name="Telefono"/>
+												</div>
+												<div class="field">
+													<label>Correo:</label>
+													<input type="email" value="" name="Correo"/>
+												</div>
+												<div class="field">
+													<label>Dirección:</label>
+													<input type="text" value="" name="Direccion"/>
+												</div>
+												<input type="submit" value="Crear Usuario" />
+												<!--<div class="field">
 													<label>Your Message:</label>
 													<textarea cols="1" rows="1"></textarea>
-												</div>
-												<div class="wrapper">
+												</div>-->
+												<!--<div class="wrapper">
 													<label>&nbsp;</label>
-													<a href="#" class="link1"><span><span>Send Your Message</span></span></a></div>
+													<a href="#" class="link1"><span><span>Realiza el pedido</span></span></a></div>-->
 												</fieldset>
 											</form>
 										</div>
@@ -111,33 +133,19 @@
 			<aside>
 				<div class="inside">
 					<ul class="insurance">
-						<li><strong>Health Insurance</strong>Sed ut perspiciatis undomnis iste natus error</li>
-						<li><strong>Auto Insurance</strong>Nequeporo quisquam estqui dolorem ipsuquia dolor</li>
-						<li><strong>Home Insurance</strong>Temporibus autem qubusdam et aut officiis</li>
+						<li><strong>Mudanza garantizada</strong>Solicita tu mudanza o traslado con nosotros.</li>
+						<li><strong>Clasifica tus bienes</strong>Especifica el mobiliario a ser trasladado para realizar las labores de cuidado.</li>
 					</ul>
-					<h2><span>Our</span> services</h2>
+					<h2><span>Nuestros</span> servicios</h2>
 					<ul class="services">
-						<li><a href="#">Sedut perspiciatis</a></li>
-						<li><a href="#">Unde omnisiste</a></li>
-						<li><a href="#">Natus errorsit voluptatem</a></li>
-						<li><a href="#">Accusantium</a></li>
-						<li><a href="#">Doloremque laudtium</a></li>
-						<li><a href="#">Totamrem aperiam</a></li>
-						<li><a href="#">Eaque ipsaquae</a></li>
-						<li><a href="#">Lnventore veritatis</a></li>
-						<li><a href="#">Quasi architecto betae</a></li>
-						<li><a href="#">Vitaedicta sunt</a></li>
-						<li><a href="#">Nemoenim ipsam</a></li>
-						<li><a href="#">Voluptatem quia</a></li>
-						<li><a href="#">Dluptas sit aspernatur</a></li>
-						<li><a href="#">Sedut perspiciatis</a></li>
-						<li><a href="#">Unde omnisiste</a></li>
-						<li><a href="#">Natus errorsit voluptatem</a></li>
-						<li><a href="#">Accusantium</a></li>
-						<li><a href="#">Doloremque laudtium</a></li>
-						<li><a href="#">Totamrem aperiam</a></li>
-						<li><a href="#">Eaque ipsaquae</a></li>
-						<li><a href="#">Lnventore veritatis</a></li>
+						<li><a href="#">Mudanzas y traslados</a></li>
+						<li><a href="#">Cuidado y traslado de mobiliario delicado</a></li>
+						<li><a href="#">Desmontaje de mobiliario</a></li>
+						<li><a href="#">Montaje de mobiliario</a></li>
+						<li><a href="#">Personal altamente calificado</a></li>
+						<li><a href="#">Prioridad en mudanzas</a></li>
+						<li><a href="#">Fechas disponibles</a></li>
+						<li><a href="#">Geolocalización para largos traslados</a></li>
 					</ul>
 					<div class="wrapper"><a href="#" class="link1"><span><span>More Services</span></span></a></div>
 				</div>
@@ -146,7 +154,7 @@
 <!-- footer -->
 		<footer>
 			<div class="inside">
-				<a rel="nofollow" href="http://www.templatemonster.com" class="new_window">Website template</a> designed by TemplateMonster.com<br/><a href="http://www.templates.com/product/3d-models/" class="new_window">3D Models</a> provided by Templates.com
+				<a rel="nofollow" class="new_window">Mu&eacute;velo.</a> Desarrollado por Alustiza, Ricardo. Brito Ram&oacute;n. Carrione, Willmer y Maldonado, Carlos<br/><class="new_window"><i>Cualquier intento de plagio es penalizado por la ley</i>
 			</div>
 		</footer>
 	</div>
