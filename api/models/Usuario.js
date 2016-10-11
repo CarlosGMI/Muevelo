@@ -6,15 +6,17 @@
  */
 
 module.exports = {
+	connection: 'mueveloDataBase2',
+	tableName: 'usuario',
 
   attributes: 
   {
   	IDUsuario:
   	{
-  		type: 'number',
-  		required: true,
+  		type: 'integer',
   		unique: true,
-  		primaryKey: true
+  		primaryKey: true,
+  		autoIncrement: true
   	},
 
   	Username:
@@ -43,13 +45,13 @@ module.exports = {
 
   	Cedula:
   	{
-  		type: 'number',
+  		type: 'integer',
   		required: true
   	},
 
   	Telefono:
   	{
-  		type: 'number',
+  		type: 'integer',
   		required: true	
   	},
 
@@ -63,7 +65,7 @@ module.exports = {
   	{
   		type: 'string',
   		required: true
-  	}	
+  	}
   }
 };
 

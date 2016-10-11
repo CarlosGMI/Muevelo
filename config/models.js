@@ -18,6 +18,8 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
   connection: 'mueveloDataBase2',
+  autoCreatedAt: false,
+  autoUpdatedAt: false,
 
   /***************************************************************************
   *                                                                          *
