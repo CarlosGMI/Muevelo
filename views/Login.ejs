@@ -39,6 +39,7 @@
 						<li><a href="Nosotros">Nosotros</a></li>
 						<li><a href="Contratanos">Cont&aacute;ctanos</a></li>
 						<li><a href="Login">Login</a></li>
+						<li><a href="usuario">Usuarios</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -53,7 +54,7 @@
 
 
 					
-<form name="login"> 
+<form name="login" method="POST" action="/login"> 
      <table width="200" border="0"> 
        <tr> 
          <th scope="row"><h2>Usuario</h2></th> 
@@ -67,7 +68,7 @@
            <input name="password" type="password" class="Input" value="" size="20" /> 
          </span></td> 
          <td><span class="cnt"> 
-           <input value="Entrar" target="_parent" onclick="Login()" type="button" class="boton"/> 
+           <input value="Entrar" target="_parent" onclick="submit()" type="button" class="boton"/> 
          </span></td> 
        </tr> 
        

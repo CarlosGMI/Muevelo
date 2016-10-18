@@ -45,8 +45,14 @@ module.exports.routes = {
     view: 'contact-us'
  
   },
+  'post /login': 'AuthController.login',
+
+  '/logout': 'AuthController.logout',
   '/Login':{
       view:'Login'
+      },
+  '/usuario':{
+      view:'usuario'
       }
 
   /***************************************************************************
