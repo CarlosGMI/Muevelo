@@ -1,5 +1,4 @@
-var passport = require('passport'),
-LocalStrategy = require('passport-local').Strategy,
+/*LocalStrategy = require('passport-local').Strategy,
 bcrypt = require('bcryptjs');
 
 passport.serializeUser(function(Usuario, done) {
@@ -40,4 +39,4 @@ passport.use(new LocalStrategy({
         });
     });
   }
-));
+)); */
