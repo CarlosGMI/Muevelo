@@ -5,7 +5,7 @@
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 
- //esto es solo un comment. no le paren bola
+ 
 var passport = require('passport');
 module.exports = {
 	_config: {
