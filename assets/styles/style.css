@@ -102,6 +102,9 @@ h2 span {color:#f85811}
 .box h2 {font-size:1.923em;margin-bottom:50px}
 /* content */
 #content .inside {padding:24px 40px 30px 50px}
+.labelRegistro {color: black}
+#idDireccion {color: #ff3300;margin-left: 2cm}
+.botonRegistro {margin-left: 9cm}
 /* Sidebar */
 aside .inside {padding:12px 45px 0 40px}
 aside h2 {letter-spacing:-1px}

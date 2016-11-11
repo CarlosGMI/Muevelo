@@ -32,19 +32,27 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
+  '/': 
+  {
     view: 'index'
   },
-  '/index':{
+  '/index':
+  {
     view: 'index'
   },
-  '/Nosotros':{
+  '/Nosotros':
+  {
     view:'about-us'
   },
-  '/Contratanos':{
+  '/Contratanos':
+  {
     view: 'contact-us'
- 
   },
+  '/Registrate':
+  {
+    view: 'registro'
+  }
+  /*,
   'post /login': 'AuthController.login',
 
   '/logout': 'AuthController.logout',
@@ -53,7 +61,7 @@ module.exports.routes = {
       },
   '/usuario':{
       view:'usuario'
-      }
+      }*/
 
   /***************************************************************************
   *                                                                          *

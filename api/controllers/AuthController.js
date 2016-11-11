@@ -6,7 +6,7 @@
  */
 
  
-var passport = require('passport');
+/*var passport = require('passport');
 module.exports = {
 	_config: {
         actions: false,
@@ -38,5 +38,5 @@ module.exports = {
         req.logout();
         res.redirect('/');
     }
-};
+};*/
 

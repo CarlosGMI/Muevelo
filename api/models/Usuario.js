@@ -6,17 +6,16 @@
  */
 /*var bcrypt = require('bcryptjs');*/
 
-module.exports = {
-	
-	
-
-  attributes: {
+module.exports = 
+{
+  attributes: 
+  {
   	IDUsuario:
   	{
-  		type: 'integer'
-  		/*unique: true,
+  		type: 'integer',
+  		unique: true,
   		primaryKey: true,
-  		autoIncrement: true*/
+  		autoIncrement: true
   	},
 
   	Username:
@@ -58,32 +57,65 @@ module.exports = {
   	Correo:
   	{
   		type: 'string',
+      email: true,
   		required: true
   	},
 
-  	Direccion:
-  	{
-  		type: 'string',
-  		required: true
-  	},
-    toJSON: function() {
-            var obj = this.toObject();
-            delete obj.Contrasena;
-            return obj;
-    }
-  },
-  beforeCreate: function(Usuario, cb) {
-        bcrypt.genSalt(10, function(err, salt) {
-            bcrypt.hash(Usuario.Contrasena, salt, function(err, hash) {
-                if (err) {
-                    console.log(err);
-                    cb(err);
-                } else {
-                    Usuario.Contrasena = hash;
-                    cb();
-                }
-            });
-        });
-    }
+    Estado:
+    {
+      type: 'string',
+      required: true
+    },
+
+    Municipio:
+    {
+      type: 'string',
+      required: true
+    },
+
+    SectorUrb:
+    {
+      type: 'string',
+      required: true
+    },
+
+    CodigoPostal:
+    {
+      type: 'string',
+      required: true
+    },
+
+    DetallesDireccion:
+    {
+      type: 'string',
+      required:true
+    },
+
+  /*toJSON: function() 
+  {
+    var obj = this.toObject();
+    delete obj.Contrasena;
+    return obj;
+  }*/
+  }
+  /*beforeCreate: function(Usuario, cb) 
+  {
+    bcrypt.genSalt(10, function(err, salt) 
+    {
+      bcrypt.hash(Usuario.Contrasena, salt, function(err, hash) 
+      {
+        if (err) 
+        {
+          console.log(err);
+          cb(err);
+        } 
+        else 
+        {
+          Usuario.Contrasena = hash;
+          cb();
+        }
+      });
+    });
+  }*/
 };
 

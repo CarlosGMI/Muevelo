@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Mudanzas online: Regístrate</title>
+<meta name="description" content="Place your description here">
+<meta name="keywords" content="mudanzas online, mudanzas, empleos, empleos online">
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/maxheight.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body id="page1" onLoad="new ElementMaxHeight();">
+<div class="tail-bottom">
+	<div id="main">
+<!-- header -->
+		<header>
+			<div class="nav-box">
+				<nav>
+					<ul class="fright">
+						<li><a href="index"><img src="styles/images/pic-home-act.gif"></a></li>
+						<li><a href="contact-us"><img src="styles/images/pic-mail.gif"></a></li>
+						<li><a href="sitemap"><img src="styles/images/pic-sitemap.gif"></a></li>
+					</ul>
+					<ul>
+						<li class="current"><a href="index">Inicio</a></li>
+						<li><a href="Nosotros">Nosotros</a></li> <!-- PRÓXIMAMENTE AQUÍ SE HARÁ LA SOLICITUD DE MUDANZA-->
+						<li><a href="Contratanos">Contáctanos</a></li>
+						<li><a href="Login">Login</a></li>
+						<li><a href="Registrate">Regístrate</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<h2><span>Regístrate</span> y solicita tu mudanza con <span>Muévelo</span></h2><br>
+		<div class="wrapper indent">
+<!-- content -->
+	<section id="content"><div class="ic"></div>
+	<div class="inside">
+	<!--COMIENZO DE FORMULARIO DE REGISTRO-->
+<form action="/usuario/create" method="POST">
+	<div class="form-group row">
+  		<label for="example-text-input" class="col-xs-2 col-form-label labelRegistro">Username</label>
+  		<div class="col-xs-10">
+    		<input class="form-control" type="text" value="" name="Username"/>
+  		</div>
+	</div>
+	<div class="form-group row">
+  		<label for="example-search-input" class="col-xs-2 col-form-label labelRegistro">Contraseña</label>
+  		<div class="col-xs-10">
+    		<input class="form-control" type="password" value="" name="Contrasena"/>
+  		</div>
+	</div>
+	<div class="form-group row">
+  		<label for="example-email-input" class="col-xs-2 col-form-label labelRegistro">Nombre</label>
+  		<div class="col-xs-10">
+    		<input class="form-control" type="text" value="" name="Nombre"/>
+  		</div>
+	</div>
+	<div class="form-group row">
+  		<label for="example-url-input" class="col-xs-2 col-form-label labelRegistro">Apellido</label>
+  		<div class="col-xs-10">
+    		<input class="form-control" type="text" value="" name="Apellido"/>
+  		</div>
+	</div>
+	<div class="form-group row">
+  		<label for="example-url-input" class="col-xs-2 col-form-label labelRegistro">Cédula</label>
+  		<div class="col-xs-10">
+   	 		<input class="form-control" type="number" value="" name="Cedula"/>
+  		</div>
+	</div>
+	<div class="form-group row">
+  		<label for="example-password-input" class="col-xs-2 col-form-label labelRegistro">Teléfono</label>
+  		<div class="col-xs-10">
+    		<input class="form-control" type="number" value="" name="Telefono"/>
+  		</div>
+	</div>
+	<div class="form-group row">
+  		<label for="example-number-input" class="col-xs-2 col-form-label labelRegistro">Correo electrónico</label>
+  		<div class="col-xs-10">
+    		<input class="form-control" type="email" value="" name="Correo"/>
+  		</div>
+	</div><br>
+<h4 id="idDireccion" align="center"><strong>Dirección de residencia</strong></h4><br><br>
+	<div class="form-group row">
+  		<label for="example-datetime-local-input" class="col-xs-2 col-form-label labelRegistro">Estado</label> <!--Aquí se puede colocar un menú desplegable con todas las opciones para el Estado-->
+  		<div class="col-xs-10">
+    		<input class="form-control" type="text" value="" name="Estado"/>
+  		</div>
+	</div>
+	<div class="form-group row">
+  		<label for="example-date-input" class="col-xs-2 col-form-label labelRegistro">Municipio</label>
+  		<div class="col-xs-10">
+    		<input class="form-control" type="text" value="" name="Municipio"/>
+  		</div>
+	</div>
+	<div class="form-group row">
+  		<label for="example-month-input" class="col-xs-2 col-form-label labelRegistro">Sector / Urbanización</label>
+  		<div class="col-xs-10">
+    		<input class="form-control" type="text" value="" name="SectorUrb"/>
+  		</div>
+	</div>
+	<div class="form-group row">
+  		<label for="example-week-input" class="col-xs-2 col-form-label labelRegistro">Código postal</label>
+  		<div class="col-xs-10">
+    		<input class="form-control" type="text" value="" name="CodigoPostal"/>
+  		</div>
+	</div>
+	<div class="form-group row">
+  		<label for="example-time-input" class="col-xs-2 col-form-label labelRegistro">Detalles de la dirección</label>
+  		<div class="col-xs-10">
+    		<input class="form-control" type="text" value="" name="DetallesDireccion"/>
+  		</div><br><br>
+  <br><br><br><div class="form-group row">
+      <div class="offset-sm-2 col-sm-10 botonRegistro">
+        <button type="submit" class="btn btn-primary">Únete!</button>
+   </div>
+</div>
+</div>
+</form>
+</div>
+	</section>
+<!-- aside -->
+			<aside>
+				<div class="inside">
+					<ul class="insurance">
+						<li><strong>¿Necesita trabajo?</strong>Regístrate y postúlate.</li>
+					</ul>
+					<h2><span>Nuestros</span> servicios</h2>
+					<ul class="services">
+						<li><a href="#"></a>Prestamos servicios de mudanza.</li>
+						<li><a href="#">Prestamos servicios de traslados.</li>
+						<li><a href="#">Ofrecemos Empleos.</a></li>
+						<li><a href="#">Geolocalización.</a></li>
+						
+					</ul>
+					
+				</div>
+			</aside>
+		</div>
+<!-- footer -->
+		<footer>
+			<div class="inside">
+				<a rel="nofollow" class="new_window">Muévelo.</a> Desarrollado por Alustiza, Ricardo. Brito, Ramón. Carrione, Willmer y Maldonado, Carlos<br/><class="new_window"><i>Cualquier intento de plagio es penalizado por la ley</i>
+			</div>
+		</footer>
+	</div>
+</div>
+</body>
+</html>
