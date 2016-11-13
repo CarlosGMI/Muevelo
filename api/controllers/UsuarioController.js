@@ -8,7 +8,7 @@
 module.exports = 
 {
 
-	Nuevo: function(req, res)
+	/*Nuevo: function(req, res)
 	{
 		res.view();
 	},
@@ -31,6 +31,8 @@ module.exports =
 		}); 
 	}
 
+
+		
 	/*usuario: function(req, res, next){
 		Usuario.find(function encontrarUsuario(err, usuarios){
 			if (err) return next(err);
