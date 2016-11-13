@@ -42,6 +42,7 @@ module.exports.connections = {
   ***************************************************************************/
   mysql: 
   {
+
      adapter: 'sails-mysql',
      host: 'localhost',
      port: 3306,
@@ -49,6 +50,24 @@ module.exports.connections = {
      password: 'eduardo14', 
      database: 'muevelo2' 
   }
+
+    /*adapter: 'sails-mysql',
+    host: 'localhost',
+    port: 3307,
+    user: 'carlosgmi', 
+    password: 'gordito21', 
+    database: 'muevelo2' 
+  },*/
+
+  /*mueveloRemota:
+  {
+    adapter: 'sails-mysql',
+    user: 'id182619_muevelo',
+    password: 'mudanzasonline',
+    host: 'mueveloapp.000webhostapp.com',
+    database: 'id182619_muevelodb',
+  }*/
+
 
    /*
 
