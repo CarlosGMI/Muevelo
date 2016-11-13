@@ -16,8 +16,6 @@ module.exports =
   		unique: true,
   		primaryKey: true,
   		autoIncrement: true
-     
-      
   	},
 
   	Username:
@@ -59,38 +57,38 @@ module.exports =
   	Correo:
   	{
   		type: 'string',
-      email: true
-  		//required: true
+      email: true,
+  		required: true
   	},
 
     Estado:
     {
-      type: 'string'
-     // required: true
+      type: 'string',
+      required: true
     },
 
     Municipio:
     {
-      type: 'string'
-      //required: true
+      type: 'string',
+      required: true
     },
 
     SectorUrb:
     {
-      type: 'string'
-      //required: true
+      type: 'string',
+      required: true
     },
 
     CodigoPostal:
     {
-      type: 'string'
-     // required: true
+      type: 'string',
+      required: true
     },
 
     DetallesDireccion:
     {
-      type: 'string'
-      //required:true
+      type: 'string',
+      required:true
     },
 
   /*toJSON: function() 
