@@ -40,9 +40,9 @@ module.exports.routes = {
   {
     view: 'index'
   },
-  '/Nosotros':
+  '/Mudanzas':
   {
-    view:'about-us'
+    view:'solicitudMudanzas'
   },
   '/Contratanos':
   {
@@ -51,6 +51,10 @@ module.exports.routes = {
   '/Registrate':
   {
     view: 'registro'
+  },
+  '/Login':
+  {
+    view: 'Login'
   }
   /*,
   'post /login': 'AuthController.login',

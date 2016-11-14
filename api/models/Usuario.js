@@ -21,13 +21,15 @@ module.exports =
   	Username:
   	{
   		type: 'string',
-  		required: true
+  		required: true,
+      unique: true
   	},
 
   	Contrasena:
   	{
   		type: 'string',
-  		required: true
+  		required: true,
+      unique: true
   	},
 
   	Nombre:
@@ -45,20 +47,23 @@ module.exports =
   	Cedula:
   	{
   		type: 'integer',
-  		required: true
+  		required: true,
+      unique: true
   	},
 
   	Telefono:
   	{
-  		type: 'integer',
-  		required: true	
+  		type: 'string',
+  		required: true,
+      unique: true	
   	},
 
   	Correo:
   	{
-  		type: 'string',
+  		type: 'email',
       email: true,
-  		required: true
+  		required: true,
+      unique: true
   	},
 
     Estado:
@@ -82,7 +87,6 @@ module.exports =
     CodigoPostal:
     {
       type: 'string',
-      required: true
     },
 
     DetallesDireccion:
@@ -91,6 +95,17 @@ module.exports =
       required:true
     },
 
+    EsEmpleado:
+    {
+      type: 'boolean',
+      defaultsTo: false 
+    },
+
+    Pedidos: //REFERENCIA A QUE UN USUARIO PUEDE TENER MUCHOS PEDIDOS 
+    {
+      collection: 'Pedido',
+      via: 'owner'
+    }
   /*toJSON: function() 
   {
     var obj = this.toObject();

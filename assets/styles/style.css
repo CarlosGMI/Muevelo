@@ -9,6 +9,8 @@ html,body {height:100%}
 #main {margin:0 auto;width:1000px;font-size:.814em}
 /* Header */
 header {height:208px;position:relative}
+#tituloSolicitudMudanza {margin-left: 7cm}
+#tituloDireccionMudanza {color: #ff3300;margin-left: 2cm}
 /* Content */
 section#content {width:739px;float:left}
 .ic, .ic a {border:0;float:left;background:#fff;color:#f00;width:50% !important;line-height:10px;font-size:10px;margin:-120% 0 0 0;overflow:hidden;padding:0}
@@ -105,6 +107,7 @@ h2 span {color:#f85811}
 .labelRegistro {color: black}
 #idDireccion {color: #ff3300;margin-left: 2cm}
 .botonRegistro {margin-left: 9cm}
+.botonSolicitudMudanza {margin-left: 8cm}
 #parrafoRegistro {color: #ff3300;font-size: 250%}
 #parrafoRegistro2 {color: black;font-size: 100%}
 /* Sidebar */
