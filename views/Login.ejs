@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Articles - Articles | BizSolutions - Free Website Template from Templates.com</title>
+<title>Muévelo: Login</title>
 <meta name="description" content="Place your description here">
 <meta name="keywords" content="put, your, keyword, here">
 <meta name="author" content="Templates.com - website templates provider">
@@ -11,16 +11,6 @@
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 <script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
 <script type="text/javascript" src="js/script.js"></script>
-<!--[if lt IE 7]>
-	<link rel="stylesheet" href="css/ie6.css" type="text/css" media="screen">
-	<script type="text/javascript" src="js/ie_png.js"></script>
-	<script type="text/javascript">
-		ie_png.fix('.png');
-	</script>
-<![endif]-->
-<!--[if lt IE 9]>
-	<script type="text/javascript" src="js/html5.js"></script>
-<![endif]-->
 </head>
 <body id="page3">
 <div class="tail-bottom">
@@ -39,81 +29,58 @@
 						<li><a href="Mudanzas">Mudanzas</a></li>
 						<li><a href="Contratanos">Cont&aacute;ctanos</a></li>
 						<li><a href="Login">Login</a></li>
-						<li><a href="usuario">Usuarios</a></li>
+						<li><a href="Registrate">Regístrate</a></li>
 					</ul>
 				</nav>
 			</div>
-			
 		</header>
+		<h2 id="tituloSolicitudMudanza">¡Entra a <span>Muévelo</span>!</h2><br>
 		<div class="wrapper indent">
 <!-- content -->
-			<section id="content">
-				
-				<div class="inside">
-					
-
-
-					
-<form name="login" method="POST" action="/login"> 
-     <table width="200" border="0"> 
-       <tr> 
-         <th scope="row"><h2>Usuario</h2></th> 
-         <td><span class="cnt"> 
-           <input name="usuario" type="text" class="Input" value="" size="20" /> 
-         </span></td> 
-       </tr> 
-       <tr> 
-         <th height="33" scope="row"><h2>Clave</h2></th> 
-         <td><span class="cnt"> 
-           <input name="password" type="password" class="Input" value="" size="20" /> 
-         </span></td> 
-         <td><span class="cnt"> 
-           <input value="Entrar" target="_parent" onclick="submit()" type="button" class="boton"/> 
-         </span></td> 
-       </tr> 
-       
-     </table> 
-</form> 
-
-<script language="JavaScript"> 
-function Login(){ 
-var done=0; 
-var usuario=document.login.usuario.value; 
-var password=document.login.password.value; 
-if (usuario=="USUARIO1" && password=="CONTRASEÑA1") { 
-window.location="TU_PAGINA_WEB.HTML"; 
-} 
-if (usuario=="USUARIO2" && password=="CONTRASEÑA2") { 
-window.location="TU_PAGINA_WEB.HTML"; 
-} 
-if (usuario=="" && password=="") { 
-window.location="errorpopup.html"; 
-} 
-} 
-        </script> 
-</center> 
-<script language="Javascript"> 
-<!-- Begin 
-document.oncontextmenu = function(){return false} 
-// End --> 
-</script>
-
-
-				</div>
-			</section>
+	<section id="content">
+	<div class="inside">
+	<form action="">
+  		<div class="container">
+    		<input type="text" placeholder="Introduzca username" name="uname" required>
+    		<input type="password" placeholder="Introduzca contraseña" name="psw" required><br><br>
+    		<input type="checkbox" checked="checked" id="sesionAbierta">Mantener sesión abierta<br><br>
+    		<button type="submit">Entra</button>
+  		</div><hr>
+  		<div class="container">
+    		<span class="psw">¿Se te olvidó la <a href="index">contraseña?</a></span>
+  		</div>
+	</form>
+		<!--<form class="form-signin">
+        	<h2 class="form-signin-heading">Please sign in</h2>
+        	<input type="text" class="input-block-level" placeholder="Email address">
+        	<input type="password" class="input-block-level" placeholder="Password">
+        	<label class="checkbox">
+          	<input type="checkbox" value="remember-me"> Remember me
+        	</label>
+        	<button class="btn btn-large btn-primary" type="submit">Sign in</button>
+      </form>-->
+	</div>
+	</section>
 <!-- aside -->
 			<aside>
 				<div class="inside">
-					
-					
-					
+					<ul class="insurance">
+						<li><strong>¿Necesita trabajo?</strong>Regístrate y postúlate.</li>
+					</ul>
+					<h2><span>Nuestros</span> servicios</h2>
+					<ul class="services">
+						<li><a href="#"></a>Prestamos servicios de mudanza.</li>
+						<li><a href="#">Prestamos servicios de traslados.</li>
+						<li><a href="#">Ofrecemos Empleos.</a></li>
+						<li><a href="#">Geolocalización.</a></li>
+					</ul>
 				</div>
 			</aside>
 		</div>
 <!-- footer -->
 		<footer>
 			<div class="inside">
-				<a rel="nofollow" href="http://www.templatemonster.com" class="new_window">Website template</a> designed by TemplateMonster.com<br/><a href="http://www.templates.com/product/3d-models/" class="new_window">3D Models</a> provided by Templates.com
+				<a rel="nofollow" class="new_window">Muévelo.</a> Desarrollado por Alustiza, Ricardo. Brito, Ramón. Carrione, Willmer y Maldonado, Carlos<br/><class="new_window"><i>Cualquier intento de plagio es penalizado por la ley</i>
 			</div>
 		</footer>
 	</div>

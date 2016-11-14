@@ -110,6 +110,37 @@ h2 span {color:#f85811}
 .botonSolicitudMudanza {margin-left: 8cm}
 #parrafoRegistro {color: #ff3300;font-size: 250%}
 #parrafoRegistro2 {color: black;font-size: 100%}
+input[type=text], input[type=password] 
+{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-left: 3cm;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#sesionAbierta {margin-left: 3cm}
+.container 
+{
+    padding: 16px;
+}
+span.psw 
+{
+    padding-top: 11px;
+    margin-left: 7cm;
+}
+button 
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    margin-left: 3cm;
+    cursor: pointer;
+    width: 50%;
+}
 /* Sidebar */
 aside .inside {padding:12px 45px 0 40px}
 aside h2 {letter-spacing:-1px}
