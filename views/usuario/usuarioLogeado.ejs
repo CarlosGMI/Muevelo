@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Mudanzas online: Registrado</title>
+<meta name="description" content="Place your description here">
+<meta name="keywords" content="mudanzas online, mudanzas, empleos, empleos online">
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/maxheight.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body id="page1" onLoad="new ElementMaxHeight();">
+<div class="tail-bottom">
+	<div id="main">
+<!-- header -->
+		<header>
+			<div class="nav-box">
+				<nav>
+					<ul class="fright">
+						<li><a href="index"><img src="styles/images/pic-home-act.gif"></a></li>
+						<li><a href="contact-us"><img src="styles/images/pic-mail.gif"></a></li>
+						<li><a href="sitemap"><img src="styles/images/pic-sitemap.gif"></a></li>
+					</ul>
+					<ul>
+						<li class="current"><a href="/">Inicio</a></li>
+						<li><a href="/Mudanzas">Mudanzas</a></li>
+						<li><a href="/Contratanos">Contáctanos</a></li>
+						<% if (!session.authenticated) { %>
+						<li><a href="/Login">Login</a></li>
+						<% } %>
+						<li><a href="/Registrate">Regístrate</a></li>
+					</ul>
+				</nav>
+			</div><br><br>
+			<p id="perfilUsuario">Perfil de usuario: <b><%=Usuario.Username%></b></p>
+			<hr>
+		</header>
+		<div class="wrapper indent">
+<!-- content -->
+	<section id="content"><div class="ic"></div>
+	<div class="inside">
+	<div class="imagenPerfil">
+        <img src="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1/128/profile2-128.png" alt="<%=Usuario.Nombre%>" class="imagenUsuario"/><br><br>
+       	<h3 id="nombreApellido"><b><%=Usuario.Nombre%> <%=Usuario.Apellido%></b></h3><br>
+    	<h3 id="nombreApellido"><b><%=Usuario.Correo%></b></h3><br>
+    	<h3 id="nombreApellido"><b><%=Usuario.Cedula%></b></h3><br>
+    </div><br>
+    <div class="tablaPerfil">
+    <h2><span>#Pedido: </span><%=Pedido.IDPedido%></h2>
+    <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Dirección de residencia</th>
+        <th>Dirección a realizar la mudanza</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>Estado:  </b><%=Usuario.Estado%></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><b>Municipio:  </b><%=Usuario.Municipio%></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><b>Sector/Urbanización:  </b><%=Usuario.SectorUrb%></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><b>Código postal:  </b><%=Usuario.CodigoPostal%></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+	</div>
+	</section>
+<!-- aside -->
+			<aside>
+				<div class="inside">
+					<ul class="insurance">
+						<li><strong>¿Necesita trabajo?</strong>Regístrate y postúlate.</li>
+					</ul>
+					<h2><span>Nuestros</span> servicios</h2>
+					<ul class="services">
+						<li><a href="#"></a>Prestamos servicios de mudanza.</li>
+						<li><a href="#">Prestamos servicios de traslados.</li>
+						<li><a href="#">Ofrecemos Empleos.</a></li>
+						<li><a href="#">Geolocalización.</a></li>
+					</ul>
+					
+				</div>
+			</aside>
+		</div>
+<!-- footer -->
+		<footer>
+			<div class="inside">
+				<a rel="nofollow" class="new_window">Muévelo.</a> Desarrollado por Alustiza, Ricardo. Brito, Ramón. Carrione, Willmer y Maldonado, Carlos<br/><class="new_window"><i>Cualquier intento de plagio es penalizado por la ley</i>
+			</div>
+		</footer>
+	</div>
+</div>
+</body>
+</html>

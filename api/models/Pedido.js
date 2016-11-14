@@ -7,86 +7,88 @@
 
 module.exports = 
 {
-  attributes: 
-  {
-  	IDPedido:
-  	{
-  		type: 'integer',
-  		unique: true,
-  		primaryKey: true,
-  		autoIncrement: true
-  	},
+	schema: true,
 
-  	EstadoM:
+  	attributes: 
   	{
-  		type: 'string',
-  		required: true
-  	},
+  		IDPedido:
+  		{
+  			type: 'integer',
+  			unique: true,
+  			primaryKey: true,
+  			autoIncrement: true
+  		},
 
-  	MunicipioM:
-  	{
-  		type: 'string',
-  		required: true
-  	},
+  		EstadoM:
+  		{
+  			type: 'string',
+  			required: true
+  		},
 
-  	SectorUrbM:
-  	{
-  		type: 'string',
-  		required: true
-  	},	
+  		MunicipioM:
+  		{
+  			type: 'string',
+  			required: true
+  		},
 
-  	CodigoPostalM:
-  	{
-  		type: 'string'
-  	},
+  		SectorUrbM:
+  		{
+  			type: 'string',
+  			required: true
+  		},	
 
-  	DetallesDireccionM:
-  	{
-  		type: 'string',
-  		required: true
-  	},
+  		CodigoPostalM:
+  		{
+  			type: 'string'
+  		},
 
-  	FechaMudanza:
-  	{
-  		type: 'datetime',
-  		required: true,
-  		format: 'dd-mm-yyyy'
-  	},
+  		DetallesDireccionM:
+  		{
+  			type: 'string',
+  			required: true
+  		},
 
-  	Mobiliario:
-  	{
-  		type: 'longtext',
-  		required: true
-  	},
+  		FechaMudanza:
+  		{
+  			type: 'datetime',
+  			required: true,
+  			format: 'dd-mm-yyyy'
+  		},
 
-  	Metros2:
-  	{
-  		type: 'integer',
-  		required: true
-  	},
+  		Mobiliario:
+  		{
+  			type: 'longtext',
+  			required: true
+  		},
 
-  	Prioridad:
-  	{
-  		type: 'string',
-  		required: true
-  	},
+  		Metros2:
+  		{
+  			type: 'integer',
+  			required: true
+  		},
 
-  	EstadoEntrega:
-  	{
-  		type: 'boolean',
-  		defaultsTo: false
-  	},
+  		Prioridad:
+  		{
+  			type: 'string',
+  			required: true
+  		},
 
-  	Tracking:
-  	{
-  		type: 'string'
-  	},
+  		EstadoEntrega:
+  		{
+  			type: 'boolean',
+  			defaultsTo: false
+  		},
 
-  	owner: //REFERENCIA A QUE UN PEDIDO SOLO PERTENECE A UN USUARIO
-  	{
-  		model: 'Usuario'
-  		//required: true
+	  	Tracking:
+	  	{
+	  		type: 'string'
+	  	},
+
+	  	owner: //REFERENCIA A QUE UN PEDIDO SOLO PERTENECE A UN USUARIO
+	  	{
+	  		model: 'Usuario'
+	  		//required: true
+	  	}
   	}
-  }
 };
 
