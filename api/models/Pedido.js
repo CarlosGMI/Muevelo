@@ -50,9 +50,9 @@ module.exports =
 
   		FechaMudanza:
   		{
-  			type: 'datetime',
+  			type: 'date',
   			required: true,
-  			format: 'dd-mm-yyyy'
+  			//format: 'dd-mm-yyyy'
   		},
 
   		Mobiliario:

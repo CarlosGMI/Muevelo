@@ -41,7 +41,7 @@
 		<section id="content"><div class="ic"></div>
 		<div class="inside">
 	<!--COMIENZO DE FORMULARIO DE SOLICITUD DE MUDANZA-->	
-	<form class="form-horizontal" role="form" method="POST" action="">
+	<form class="form-horizontal" method="POST" action="/pedido/create">
 	<h4 id="tituloDireccionMudanza" align="center"><strong>Dirección de mudanza</strong></h4><br><br>
 	<div class="form-group">
 		<label class="col-sm-2 control-label">Estado</label>
@@ -96,10 +96,10 @@
 	<div class="form-group">
 		<label class="col-sm-2 control-label">Prioridad</label>
 			<div class="col-xs-3">
-				<select class="form-control" id="exampleSelect1">
-      				<option>Ninguna</option>
-      				<option>Alta</option>
-      				<option>Media</option>
+				<select class="form-control" id="exampleSelect1" name="Prioridad">
+      				<option value="Ninguna">Ninguna</option>
+      				<option value="Alta">Alta</option>
+      				<option value="Media">Media</option>
     			</select>
 			</div>
 	</div>
