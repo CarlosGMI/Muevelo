@@ -56,6 +56,10 @@ module.exports.routes = {
   {
     view: 'Login'
   },
+  '/servicioPedido':
+  {
+    view: 'pedido/servicioPedido'
+  },
   //'/usuario/usuarioLogeado/*': 'UsuarioController.usuarioLogeado'
   /*,
   'post /login': 'AuthController.login',

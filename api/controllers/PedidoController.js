@@ -17,11 +17,11 @@ module.exports =
 		Pedido.create(req.params.all(), function pedidoCreated(err,Pedido)
 		{
 			if (err) return next(err);
-			res.redirect('/pedido/pedirServicio/'+Pedido.IDPedido);
+			res.redirect('/pedido/servicioPedido/'+Pedido.IDPedido);
 		});	
 	},
 
-	pedirServicio: function(req, res, next)
+	servicioPedido: function(req, res, next)
 	{
 		Pedido.findOne(req.param('id'), function foundPedido(err,Pedido)
 		{
