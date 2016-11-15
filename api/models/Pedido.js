@@ -88,7 +88,13 @@ module.exports =
 	  	{
 	  		model: 'Usuario'
 	  		//required: true
-	  	}
+	  	},
+
+      owners: //REFERENCIA A QUE UN PEDIDO TIENE MUCHOS SERVICIOS
+      {
+        collection: 'Servicio',
+        via: 'pedidos'
+      }
   	}
 };
 

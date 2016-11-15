@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <title>About Us - About Us | BizSolutions - Free Website Template from Templates.com</title>
@@ -32,90 +32,16 @@
 						<li><a href="Registrate">Regístrate</a></li>
 					</ul>
 				</nav>
-			</div>
+			</div><br><br><br>
+			<h2 id="tituloSolicitudMudanza">Se ha procesado <span>correctamente</span> tu solicitud de mudanza</h2><br>
 		</header>
-		<h2 id="tituloSolicitudMudanza">Solicita tu mudanza con <span>Muévelo</span></h2><br>
+		
 		<hr>
 		<div class="wrapper indent">
 <!-- content -->
 		<section id="content"><div class="ic"></div>
 		<div class="inside">
-	<!--COMIENZO DE FORMULARIO DE SOLICITUD DE MUDANZA-->	
-	<form class="form-horizontal" method="POST" action="/pedido/create">
-	<h4 id="tituloDireccionMudanza" align="center"><strong>Dirección de mudanza</strong></h4><br><br>
-	<div class="form-group">
-		<label class="col-sm-2 control-label">Estado</label>
-			<div class="col-xs-3">
-				<input type="text" class="form-control" name="EstadoM" value="">
-			</div>
-	</div>
-	<div class="form-group">
-		<label class="col-sm-2 control-label">Municipio</label>
-			<div class="col-xs-4">
-				<input type="text" class="form-control" name="MunicipioM" value="">
-			</div>
-	</div>
-	<div class="form-group">
-		<label class="col-sm-2 control-label">Sector / Urbanización</label>
-			<div class="col-xs-4">
-				<input type="text" class="form-control" name="SectorUrbM" value="">
-			</div>
-	</div>
-	<div class="form-group">
-		<label class="col-sm-2 control-label">Código postal</label>
-			<div class="col-xs-2">
-				<input type="text" class="form-control" name="CodigoPostalM" value="">
-			</div>
-	</div>
-	<div class="form-group">
-		<label class="col-sm-2 control-label">Detalles de dirección</label>
-			<div class="col-sm-10">
-				<textarea class="form-control" rows="3" name="DetallesDireccionM"></textarea>
-			</div>
-	</div>
-	<hr>
-	<h4 id="tituloDireccionMudanza" align="center"><strong>Detalles de mudanza</strong></h4><br><br>
-	<div class="form-group">
-		<label class="col-sm-2 control-label">Fecha de mudanza</label>
-			<div class="col-xs-3">
-				<input type="date" class="form-control" name="FechaMudanza" value="" placeholder="dd-mm-aaaa">
-			</div>
-	</div>
-	<div class="form-group">
-		<label class="col-sm-2 control-label">Mobiliario que posee</label>
-			<div class="col-sm-10">
-				<textarea class="form-control" rows="5" name="Mobiliario" placeholder="Por favor especifique mobiliario que usted considere delicado o que debamos prestar atención."></textarea>
-			</div>
-	</div>
-	<div class="form-group">
-		<label class="col-sm-2 control-label">Dimensiones (m2)</label>
-			<div class="col-xs-2">
-				<input type="number" class="form-control" name="Metros2" value="">
-				<input type="hidden" name="owner" value="<%= req.session.Usuario.IDUsuario %>"
-			</div>
-	</div>
-	<div class="form-group">
-		<label class="col-sm-2 control-label">Prioridad</label>
-			<div class="col-xs-3">
-				<select class="form-control" id="exampleSelect1" name="Prioridad">
-      				<option value="Ninguna">Ninguna</option>
-      				<option value="Alta">Alta</option>
-      				<option value="Media">Media</option>
-    			</select>
-			</div>
-	</div>
-	<br><br>
-	<div class="form-group">
-		<div class="col-sm-10 col-sm-offset-2 botonSolicitudMudanza">
-			 <button type="submit" class="btn btn-primary">Solicita la mudanza!</button>
-		</div>
-	</div>
-	<div class="form-group">
-		<div class="col-sm-10 col-sm-offset-2">
-			<! Will be used to display an alert to the user>
-		</div>
-	</div>
-</form>
+		<p id="parrafoRegistro"><b>#Servicio: </b><%=Servicio.IDServicio%></p>
 		</div>
 		</section>
 <!-- aside -->

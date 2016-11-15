@@ -12,15 +12,34 @@ module.exports =
 		res.view();
 	},
 
-	/*create: function(req, res, next)
+	create: function(req, res, next)
 	{
 		Pedido.create(req.params.all(), function pedidoCreated(err,Pedido)
 		{
 			if (err) return next(err);
-			res.view();
-			console.log(Pedido)
-			//res.redirect('/usuario/usuarioRegistrado/'+Usuario.IDUsuario);
+			res.redirect('/pedido/pedirServicio/'+Pedido.IDPedido);
 		});	
+	},
+
+	pedirServicio: function(req, res, next)
+	{
+		Pedido.findOne(req.param('id'), function foundPedido(err,Pedido)
+		{
+			if (err) return next(err);
+			if (!Pedido) return next();
+			res.view({Pedido: Pedido});
+		});
+	},
+
+	/*usuarioLogeado: function(req, res, next)
+	{
+		console.log("HOLAA");
+		Pedido.findOne({IDPedido: req.param('id')}, function foundPedido(err,Pedido)
+		{
+			if (err) return next(err);
+			if (!Pedido) return next();
+			res.view({Pedido: Pedido});
+		});
 	}*/
 };
 

@@ -37,6 +37,7 @@ module.exports =
 		{
 			if (err) return next(err);
 			if (!Usuario) return next();
+			if (!Pedido) return next();
 			res.view({Usuario: Usuario});
 		});
 	}
