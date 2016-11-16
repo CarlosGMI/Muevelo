@@ -26,8 +26,13 @@
 					</ul>
 					<ul>
 						<li><a href="index">Inicio</a></li>
-						<!--<li><a href="Mudanzas">Mudanzas</a></li>-->
-						<!--<li><a href="Contratanos">Contáctanos</a></li>-->
+						<li>
+						<a>Mudanzas</a>
+						<% if (session.authenticated) { %>		
+						<a href="Mudanzas"></a>
+						<% } %>
+						</li>
+						<li><a href="Empleate">Empléate</a></li>
 						<li><a href="Login">Login</a></li>
 						<li class="current"><a href="Registrate">Regístrate</a></li>
 					</ul>
