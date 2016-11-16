@@ -58,7 +58,15 @@ module.exports.routes = {
   },
   '/servicioPedido':
   {
-    view: 'pedido/servicioPedido'
+    view: 'servicio/servicioPedido'
+  },
+  '/tarea2':
+  {
+    view: 'tarea2'
+  },
+  '/tarea2/*':
+  {
+    view: 'query'
   },
   //'/usuario/usuarioLogeado/*': 'UsuarioController.usuarioLogeado'
   /*,
