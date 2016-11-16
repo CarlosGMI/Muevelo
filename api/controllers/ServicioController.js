@@ -17,7 +17,7 @@ module.exports =
 		Servicio.create(req.params.all(), function servicioCreated(err,Servicio)
 		{
 			if (err) return next(err);
-			res.redirect('/pedido/servicioPedido/'+Servicio.IDServicio);
+			res.redirect('/servicio/servicioPedido/'+Servicio.IDServicio);
 		});	
 	},
 
