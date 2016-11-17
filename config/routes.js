@@ -64,9 +64,9 @@ module.exports.routes = {
   {
     view: 'tarea2'
   },
-  '/tarea2/*':
+  '/tarea2/:idq':
   {
-    view: 'query'
+    view: 'queries'
   },
   '/usuario/usuarioLogeado/': 'UsuarioController.usuarioLogeado',
 
