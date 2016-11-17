@@ -32,10 +32,13 @@
 						<li><a href="/Login">Login</a></li>
 						<% } %>
 						<li><a href="/Registrate">Regístrate</a></li>
+						<% if (session.authenticated) { %>
+						<li><a href="usuarioLogeado">Perfil</a></li>
+						<% } %>
 					</ul>
 				</nav>
 			</div><br><br>
-			<p id="perfilUsuario">Perfil de usuario: <b><%=Usuario.Username%></b></p>
+			<p id="perfilUsuario">Perfil de usuario: <b><%=req.session.Usuario.Username%></b></p>
 			<hr>
 		</header>
 		<div class="wrapper indent">
@@ -44,36 +47,32 @@
 	<div class="inside">
 	<div class="imagenPerfil">
         <img src="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1/128/profile2-128.png" alt="<%=Usuario.Nombre%>" class="imagenUsuario"/><br><br>
-       	<h3 id="nombreApellido"><b><%=Usuario.Nombre%> <%=Usuario.Apellido%></b></h3><br>
-    	<h3 id="nombreApellido"><b><%=Usuario.Correo%></b></h3><br>
-    	<h3 id="nombreApellido"><b><%=Usuario.Cedula%></b></h3><br>
+       	<h3 id="nombreApellido"><b><%=req.session.Usuario.Nombre%> <%=req.session.Usuario.Apellido%></b></h3><br>
+    	<h3 id="nombreApellido"><b><%=req.session.Usuario.Correo%></b></h3><br>
+    	<h3 id="nombreApellido"><b><%=req.session.Usuario.Cedula%></b></h3><br>
     </div><br>
+    <p align="center" style="font-size: 150%;color: #ff3300">Solicitudes de mudanza realizadas</p><br>
     <div class="tablaPerfil">
-    <h2><span>#Pedido: </span><%=Pedido.IDPedido%></h2>
     <table class="table table-striped">
     <thead>
       <tr>
-        <th>Dirección de residencia</th>
-        <th>Dirección a realizar la mudanza</th>
+      	<th>Número del pedido</th>
+        <th>Estado</th>
+        <th>Municipio</th>
+        <th>Sector/Urbanización</th>
+        <th>Código postal</th>
       </tr>
     </thead>
     <tbody>
+    <% Pedido.forEach(function(Pedidos) { %>
       <tr>
-        <td><b>Estado:  </b><%=Usuario.Estado%></td>
-        <td><%=Pedido.EstadoM%></td>
+      <th><%= Pedidos.IDPedido %></th>
+      <th><%= Pedidos.EstadoM %></th>
+      <th><%= Pedidos.MunicipioM %></th>
+      <th><%= Pedidos.SectorUrbM %></th>
+      <th><%= Pedidos.CodigoPostalM %></th>
       </tr>
-      <tr>
-        <td><b>Municipio:  </b><%=Usuario.Municipio%></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><b>Sector/Urbanización:  </b><%=Usuario.SectorUrb%></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><b>Código postal:  </b><%=Usuario.CodigoPostal%></td>
-        <td></td>
-      </tr>
+    <% }); %>  
     </tbody>
   </table>
   </div>

@@ -33,8 +33,15 @@
 						<% } %>
 						</li>
 						<li><a href="Empleate">Empléate</a></li>
+						<% if (!session.authenticated) { %>	
 						<li><a href="Login">Login</a></li>
+						<% } %>
+						<% if (!session.authenticated) { %>	
 						<li><a href="Registrate">Regístrate</a></li>
+						<% } %>
+						<% if (session.authenticated) { %>
+						<li><a href="/usuario/usuarioLogeado/">Perfil</a></li>
+						<% } %>
 					</ul>
 				</nav>
 			</div><br><br><br>

@@ -110,7 +110,7 @@ h2 span {color:#f85811}
 .botonSolicitudMudanza {margin-left: 8cm}
 #parrafoRegistro {color: #ff3300;font-size: 250%}
 #parrafoRegistro2 {color: black;font-size: 100%}
-#perfilUsuario {color: #ff3300;font-size: 250%}
+#perfilUsuario {color: #ff3300;font-size: 250%; margin-left: 1.5cm;}
 #inputUsername
 {
     width: 50%;
@@ -143,8 +143,8 @@ span.psw
     width: 50%;
 }
 #nombreApellido {margin-left: 0.3cm}
-.imagenPerfil {float: right}
-.tablaPerfil {float: left}
+.imagenPerfil {margin-left: 7cm;}
+.tablaPerfil {}
 
 /* Sidebar */
 aside .inside {padding:12px 45px 0 40px}

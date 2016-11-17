@@ -47,11 +47,13 @@ Funciono!!!!
 						<li><a href="Empleate">Empléate</a></li>
 						<li><a href="Login">Login</a></li>
 						<li><a href="Registrate">Regístrate</a></li>
+						<% if (session.authenticated) { %>
+						<li><a href="usuarioLogeado">Perfil</a></li>
+						<% } %>
 						<li><a href="tarea2">Tarea</a></li>
 					</ul>
 				</nav>
 			</div>
-			<h1><a href="index">LaSolución</a></h1>
 			<form action="" id="search-form">
 				<fieldset>
 				<input type="text">

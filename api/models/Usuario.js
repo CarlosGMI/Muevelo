@@ -108,6 +108,12 @@ module.exports =
     {
       collection: 'Pedido',
       via: 'owner'
+    },
+
+    Postulados: //REFERENCIA A QUE UN USUARIO PUEDE POSTULARSE N VECES
+    {
+      collection: 'Postulado',
+      via: 'owner'
     }
   /*toJSON: function() 
   {

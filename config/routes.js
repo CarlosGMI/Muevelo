@@ -68,17 +68,15 @@ module.exports.routes = {
   {
     view: 'query'
   },
-  //'/usuario/usuarioLogeado/*': 'UsuarioController.usuarioLogeado'
-  /*,
-  'post /login': 'AuthController.login',
-
-  '/logout': 'AuthController.logout',
-  '/Login':{
-      view:'Login'
-      },
-  '/usuario':{
-      view:'usuario'
-      }*/
+  '/usuario/usuarioLogeado/': 'UsuarioController.usuarioLogeado',
+  '/Empleate':
+  {
+    view: 'Empleate'
+  },
+  '/Postulacion':
+  {
+    view: 'Postulacion'
+  },
 
   /***************************************************************************
   *                                                                          *

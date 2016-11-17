@@ -14,14 +14,6 @@ module.exports =
 
 	create: function(req, res, next)
 	{
-		/*if (!req.param('Username') || !req.param('password'))
-		{
-			var usernamePasswordRequiredError = [{name: 'usernamePasswordRequired', message: 'Debes llenar ambos campos'}]
-			req.session.flash = {err: usernamePasswordRequiredError}
-			res.redirect('Login');
-			console.log("asdsAAAAAAAAAAa");
-			return;
-		}*/
 		Usuario.findOne({Username: req.param('Username')}).exec(function (err, Usuario)
 		{
 			if(err)
@@ -35,7 +27,8 @@ module.exports =
 			req.session.authenticated = true;
 			req.session.Usuario = Usuario;
 			console.log("Usuario encontrado "+Usuario.Nombre);
-			res.redirect('/usuario/usuarioLogeado/'+Usuario.IDUsuario);
+			res.redirect('/index');
+			//res.redirect('/usuario/usuarioLogeado/'+Usuario.IDUsuario);
 		});
 	},
 

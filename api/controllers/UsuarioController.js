@@ -7,6 +7,8 @@
 /*PROB*/
 module.exports = 
 {
+	connection: 'mysql',
+
 	Nuevo: function(req, res)
 	{
 		res.view();
@@ -33,13 +35,19 @@ module.exports =
 
 	usuarioLogeado: function(req, res, next)
 	{
-		Usuario.findOne(req.param('id'), function foundUsuario(err,Usuario)
+		var userid = req.session.Usuario.IDUsuario;
+		Pedido.query('SELECT * from pedido WHERE pedido.owner = 1', function(err, results)
+		{
+			if(err) return res.serverError(err);
+			return res.view({Pedido: results});
+		});
+		/*Usuario.findOne(req.param('id'), function foundUsuario(err,Usuario)
 		{
 			if (err) return next(err);
 			if (!Usuario) return next();
 			if (!Pedido) return next();
 			res.view({Usuario: Usuario});
-		});
+		});*/
 	}
 };
 
