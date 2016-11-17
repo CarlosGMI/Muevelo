@@ -65,6 +65,29 @@
 			 <button type="submit" class="btn btn-primary">Consultar</button>
 		</div>
 	</div>
+	<div>
+	<table class="table table-striped">
+    <thead>
+      <tr>
+      	<th>Nombre del empleado</th>
+        <th>Apellido del empleado</th>
+        <th>Rentas totales</th>
+        <th>Ganancia total</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% query2.forEach(function(q2) { %>
+      <tr>
+      <th><%= q2.Empleado %></th>
+      <th><%= q2.RentasTotales %></th>
+      <!--<th><%= Pedidos.MunicipioM %></th>
+      <th><%= Pedidos.SectorUrbM %></th>
+      <th><%= Pedidos.CodigoPostalM %></th>-->
+      </tr>
+    <% }); %>  
+    </tbody>
+  </table>
+	</div>
 <!--=========================QUERY 3===========================-->	
 <% } else if(id == 3) { %><p style="font-size: 120%"><b>ENUNCIADO N° 3</b></p><br>
 <H2>Lista de películas que nunca han sido rentadas.</H2>

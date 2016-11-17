@@ -36,7 +36,7 @@ module.exports =
 	usuarioLogeado: function(req, res, next)
 	{
 		var userid = req.session.Usuario.IDUsuario;
-		Pedido.query('SELECT * from pedido WHERE pedido.owner = 1', function(err, results)
+		Pedido.query('SELECT * from pedido WHERE pedido.owner = '+userid+';', function(err, results)
 		{
 			if(err) return res.serverError(err);
 			return res.view({Pedido: results});
