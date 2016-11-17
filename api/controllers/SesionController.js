@@ -34,6 +34,7 @@ module.exports =
 
 	destroy: function(req, res, next)
 	{
+		console.log("HE DESTRUIDO LA SESIÓN")
 		req.session.destroy();
 		res.redirect('/index')
 	}

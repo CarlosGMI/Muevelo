@@ -45,6 +45,11 @@
 <!-- content -->
 	<section id="content"><div class="ic"></div>
 	<div class="inside">
+	<div class="form-group">
+	<div class="col-sm-10 col-sm-offset-2">
+	<button style="margin-left: 0.8cm;float: right" class="btn btn-primary"><a href="/sesion/destroy">Cerrar sesión</a></button>
+	</div>
+	</div>
 	<div class="imagenPerfil">
         <img src="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1/128/profile2-128.png" alt="<%=Usuario.Nombre%>" class="imagenUsuario"/><br><br>
        	<h3 id="nombreApellido"><b><%=req.session.Usuario.Nombre%> <%=req.session.Usuario.Apellido%></b></h3><br>
