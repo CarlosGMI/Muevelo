@@ -20,14 +20,14 @@
 			<div class="nav-box">
 				<nav>
 					<ul>
-						<li class="current"><a href="index">Inicio</a></li>
+						<li><a href="index">Inicio</a></li>
 						<li>
 						<a>Mudanzas</a>
 						<% if (session.authenticated) { %>		
 						<a href="Mudanzas"></a>
 						<% } %>
 						</li>
-						<li><a href="Empleate">Empléate</a></li>
+						<li class="current"><a href="Empleate">Empléate</a></li>
 						<li><a href="Login">Login</a></li>
 						<li><a href="Registrate">Regístrate</a></li>
 						<% if (session.authenticated) { %>
@@ -59,7 +59,7 @@
 				<div class="inner">
 				<h2><b>Embaladores</b></h2>
 					<ul class="news">
-						<li>Se solicita embalador o embaladora.</li>
+						<li>Se solicita embalador.</li>
 						<li>- Buena presencia.</li>
 						<li>- No se requieren estudios.</li>
 						<li>- Entre 21 - 30 años de edad.</li>
@@ -99,7 +99,7 @@
 						<li><br>
 							<div class="form-group">
 							<div class="col-sm-10 col-sm-offset-2">
-			 				<button style="margin-left: 0.8cm" type="submit" class="btn btn-primary">Postúlate</button>
+			 				<button style="margin-left: 0.8cm" class="btn btn-primary" onclick="location.href='Postulacion';">Postúlate</button>
 							</div>
 							</div>
 						</li>

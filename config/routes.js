@@ -69,6 +69,7 @@ module.exports.routes = {
     view: 'query'
   },
   '/usuario/usuarioLogeado/': 'UsuarioController.usuarioLogeado',
+
   '/Empleate':
   {
     view: 'Empleate'
@@ -76,6 +77,10 @@ module.exports.routes = {
   '/Postulacion':
   {
     view: 'Postulacion'
+  },
+  '/usuarioLogeado':
+  {
+    view: 'usuario/usuarioLogeado'
   },
 
   /***************************************************************************
