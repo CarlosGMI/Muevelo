@@ -9,11 +9,11 @@ module.exports =
 {	
 	query: function(req, res, next)
 	{
-		console.log("MARICO ENTRE");
+		console.log("ENTRE");
 		Tarea.query('select first_name from actor', function(err, tarea)
 		{
 			if (err) return res.serverError(err);
-  			return res.json(tarea.rows);
+  			return res.json(tarea);
 		});
 	}	
 };
