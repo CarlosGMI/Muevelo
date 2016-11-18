@@ -54,23 +54,57 @@
 <H2>Películas de 3 actores específicos, de 2 categorías específicas, con cantidad de ciudades en las que se mostrarán, su descripción y si son en inglés (true/false).</H2>
 	<div class="form-group">
 		<div class="col-sm-10 col-sm-offset-2" style="margin-left: 6cm">
-			 <button type="submit" class="btn btn-primary">Consultar</button>
+			 <button type="submit" class="btn btn-primary" onclick="obtenerQuery1()">Consultar</button>
 		</div>
 	</div>
+	<br><br>
+	<div id=query1 style="display:none">
+	<p><b>#Tuplas: <%= query1.length %></b></p>
+	<table class="table table-striped">
+    <thead>
+      <tr>
+      	<th>Película</th>
+        <th>Nombre del actor</th>
+        <th>Categoría</th>
+        <th>Inglés</th>
+        <th>Descripción</th>
+        <th>Ciudades</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% query1.forEach(function(q1) { %>
+      <tr>
+      <th><%= q1.Pelicula %></th>
+      <th><%= q1.NombreActor %></th>
+      <th><%= q1.Categoria %></th>
+      <th><%= q1.Ingles %></th>
+      <th><%= q1.Descripcion %></th>
+      <th><%= q1.Ciudades %></th>
+      </tr>
+    <% }); %>  
+    </tbody>
+  </table>
+	</div>
+	<script>
+		function obtenerQuery1()
+		{
+			document.getElementById('query1').style.display = "block";
+		}
+	</script>
 <!--=========================QUERY 2===========================-->	
 <% } else if(id == 2) { %><p style="font-size: 120%"><b>ENUNCIADO N° 2</b></p><br>
 <H2>Quién de los empleados rentó más películas, la cantidad y el total de ganancia generada por ese empleado.</H2>
 	<div class="form-group">
 		<div class="col-sm-10 col-sm-offset-2" style="margin-left: 6cm">
-			 <button type="submit" class="btn btn-primary">Consultar</button>
+			 <button type="submit" class="btn btn-primary" onclick="obtenerQuery2()">Consultar</button>
 		</div>
-	</div>
-	<div>
+	</div><br><br>
+	<div id=query2 style="display:none">
+	<p><b>#Tuplas: <%= query2.length %></b></p>
 	<table class="table table-striped">
     <thead>
       <tr>
-      	<th>Nombre del empleado</th>
-        <th>Apellido del empleado</th>
+      	<th>Nombre y apellido del empleado</th>
         <th>Rentas totales</th>
         <th>Ganancia total</th>
       </tr>
@@ -80,30 +114,80 @@
       <tr>
       <th><%= q2.Empleado %></th>
       <th><%= q2.RentasTotales %></th>
-      <!--<th><%= Pedidos.MunicipioM %></th>
-      <th><%= Pedidos.SectorUrbM %></th>
-      <th><%= Pedidos.CodigoPostalM %></th>-->
+      <th><%= q2.GananciaTotal %></th>
       </tr>
     <% }); %>  
     </tbody>
   </table>
 	</div>
+	<script>
+		function obtenerQuery2()
+		{
+			document.getElementById('query2').style.display = "block";
+		}
+	</script>
 <!--=========================QUERY 3===========================-->	
 <% } else if(id == 3) { %><p style="font-size: 120%"><b>ENUNCIADO N° 3</b></p><br>
 <H2>Lista de películas que nunca han sido rentadas.</H2>
 	<div class="form-group">
 		<div class="col-sm-10 col-sm-offset-2" style="margin-left: 6cm">
-			 <button type="submit" class="btn btn-primary">Consultar</button>
+			 <button type="submit" class="btn btn-primary" onclick="obtenerQuery3()">Consultar</button>
 		</div>
+	</div><br><br>
+	<div id=query3 style="display:none">
+	<p><b>#Tuplas: <%= query3.length %></b></p>
+	<table class="table table-striped">
+    <thead>
+      <tr>
+      	<th>Películas que nunca han sido rentadas</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% query3.forEach(function(q3) { %>
+      <tr>
+      <th><%= q3.PeliculasNuncaRentadas %></th>
+      </tr>
+    <% }); %>  
+    </tbody>
+  </table>
 	</div>
+	<script>
+		function obtenerQuery3()
+		{
+			document.getElementById('query3').style.display = "block";
+		}
+	</script>
 <!--=========================QUERY 4===========================-->	
 <% } else if(id == 4) { %><p style="font-size: 120%"><b>ENUNCIADO N° 4</b></p><br>
 <H2>Listado de clientes con más de 3 días de retraso en la devolución de la película.</H2>
 	<div class="form-group">
 		<div class="col-sm-10 col-sm-offset-2" style="margin-left: 6cm">
-			 <button type="submit" class="btn btn-primary">Consultar</button>
+			 <button type="submit" class="btn btn-primary" onclick="obtenerQuery4()">Consultar</button>
 		</div>
-	</div>	
+	</div><br><br>
+	<div id=query4 style="display:none">
+	<p><b>#Tuplas: <%= query4.length %></b></p>
+	<table class="table table-striped">
+    <thead>
+      <tr>
+      	<th>Cliente</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% query4.forEach(function(q4) { %>
+      <tr>
+      <th><%= q4.Cliente %></th>
+      </tr>
+    <% }); %>  
+    </tbody>
+  </table>
+	</div>
+	<script>
+		function obtenerQuery4()
+		{
+			document.getElementById('query4').style.display = "block";
+		}
+	</script>	
 <!--=========================QUERY 5===========================-->	
 <% } else { %><p style="font-size: 120%"><b>ENUNCIADO N° 5</b></p><br>
 <H2>Lista de clientes VIP, entendiendo que los VIP son aquellos clientes que han rentado películas semanalmente durante al menos 3 meses.</H2>
