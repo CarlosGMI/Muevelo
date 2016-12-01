@@ -8,6 +8,7 @@
 module.exports = 
 {
   connection: 'mysql',
+  schema: true,
 
 	attributes: 
   	{
@@ -44,10 +45,10 @@ module.exports =
   			type: 'float'
   		},
 
-  		pedidos: //REFERENCIA A QUE UN SERVICIO PUEDE PERTENERCER A MUCHOS PEDIDOS
+  		IDPedidos: //REFERENCIA A QUE UN SERVICIO PUEDE PERTENERCER A MUCHOS PEDIDOS
   		{
   			collection: 'Pedido',
-  			via: 'owners'
+  			via: 'IDServicios'
   		}
   	}
 };

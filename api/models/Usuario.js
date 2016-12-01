@@ -69,7 +69,7 @@ module.exports =
       unique: true
   	},
 
-    Estado:
+    /*Estado:
     {
       type: 'string',
       required: true
@@ -96,7 +96,7 @@ module.exports =
     {
       type: 'string',
       required:true
-    },
+    },*/
 
     EsEmpleado:
     {
@@ -114,32 +114,14 @@ module.exports =
     {
       collection: 'Postulado',
       via: 'owner'
-    }
-  /*toJSON: function() 
-  {
-    var obj = this.toObject();
-    delete obj.Contrasena;
-    return obj;
-  }*/
-  }
-  /*beforeCreate: function(Usuario, cb) 
-  {
-    bcrypt.genSalt(10, function(err, salt) 
+    },
+
+    Direcciones: //REFERENCIA A QUE UN USUARIO TIENE UNA DIRECCIÓN
     {
-      bcrypt.hash(Usuario.Contrasena, salt, function(err, hash) 
-      {
-        if (err) 
-        {
-          console.log(err);
-          cb(err);
-        } 
-        else 
-        {
-          Usuario.Contrasena = hash;
-          cb();
-        }
-      });
-    });
-  }*/
+      //model: 'Usuario'
+      collection: 'Direccion',
+      via: 'owner'
+    }
+  }
 };
 

@@ -68,14 +68,20 @@ module.exports.routes = {
   
   '/usuario/usuarioLogeado/': 'UsuarioController.usuarioLogeado',
 
-  '/Empleate':
-  {
-    view: 'Empleate'
-  },
+  '/usuarioLogeado': 'UsuarioController.usuarioLogeado',
+
+  '/Empleate': 'EmpleoController.Empleate',
+
+  '/empleo/Empleate': 'EmpleoController.Empleate',
+
   '/Postulacion':
   {
     view: 'Postulacion'
   },
+  '/Empleos':
+  {
+    view: 'Empleos'
+  }
 
 
   /***************************************************************************

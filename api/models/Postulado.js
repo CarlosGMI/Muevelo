@@ -8,9 +8,18 @@
 module.exports = 
 {
 	connection: 'mysql',
+  schema: true,
 
 	attributes: 
 	{
+      IDPostulado:
+      {
+        type: 'integer',
+        unique: true,
+        primaryKey: true,
+        autoIncrement: true
+      },
+
   		Especialidad:
   		{
   			type: 'string',
@@ -25,7 +34,13 @@ module.exports =
   		owner:  //REFERENCIA A QUE UN POSTULADO ES UN USUARIO
   		{
   			model: 'Usuario'
-  		}
+  		},
+
+      empleos: //REFERENCIA A QUE UN POSTULADO SE HA PODIDO POSTULAR A N EMPLEOS
+      {
+        collection: 'Empleo',
+        via: 'owners'
+      }
 	}
 };
 

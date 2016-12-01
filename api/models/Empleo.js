@@ -8,10 +8,46 @@
 module.exports = 
 {
 	connection: 'mysql',
+	schema: true,
 
-  attributes: 
-  {
+	attributes: 
+	{
+		IDEmpleo:
+		{
+			type: 'integer',
+  			unique: true,
+  			primaryKey: true,
+  			autoIncrement: true
+		},
 
-  }
+		Cargo:
+		{
+			type: 'string',
+			required: true
+		},
+
+		Area:
+		{
+			type: 'string',
+			required: true
+		},
+
+		Vacante:
+		{
+			type: 'integer',
+			required: true
+		},
+
+		DetallesEmpleo:
+		{
+			type: 'string'
+		},
+
+		owners:
+		{
+			collection: 'Postulado',
+			via: 'empleos'
+		}
+	}
 };
 

@@ -91,10 +91,10 @@ module.exports =
 	  		//required: true
 	  	},
 
-      owners: //REFERENCIA A QUE UN PEDIDO TIENE MUCHOS SERVICIOS
+      IDServicios: //REFERENCIA A QUE UN PEDIDO TIENE MUCHOS SERVICIOS
       {
         collection: 'Servicio',
-        via: 'pedidos'
+        via: 'IDPedidos'
       }
   	}
 };
