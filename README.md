@@ -1,4 +1,11 @@
-# muevelo
-# Ricardo Alustiza, Ramon Brito, Willmer Carrione, Carlos Maldonado
-# Muevelo es una empresa que ofrece servicios de mudanzas a toda Caracas. Ademas, le brindamos a nuestros clientes la facilidad de trabajar con nosotros
-a [Sails](http://sailsjs.org) application
+===============================Muévelo===============================
+Universidad Metropolitana.
+Proyecto de Bases de Datos.
+Alustiza, Ricardo.
+Brito, Ramón.
+Carrione, Willmer.
+Maldonado, Carlos.
+
+
+Aplicación encargada de gestionar mudanzas en línea así como empleos para esta empresa.
+Realizada con NodeJS, SailsJS, MySQL, renderizado .ejs y arquitectura MVC. 
